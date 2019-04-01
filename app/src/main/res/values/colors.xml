@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">@color/progress_start</color>
+    <color name="orange_background">#db7510</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_alpha">#70ffffff</color>
+    <color name="white_super_alpha">#10ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="black_medium">#101010</color>
+    <color name="black_alpha">#90000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="progress_start">#8e92f6</color>
+    <color name="progress_end">#35cba9</color>
+
+    <color name="trip_green">#00a680</color>
+</resources>

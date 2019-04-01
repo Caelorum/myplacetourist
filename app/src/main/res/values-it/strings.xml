@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stngs_btn_kitchen">Cucina</string>
+    <string name="stngs_btn_address">Indririzzo</string>
+    <string name="no_location">Nessun dato GPS. Si prega di controllare l\'autorizzazione di posizione.</string>
+    <string name="stngs_btn_save">Salvare</string>
+    <string name="stngs_btn_phone">Numero di telefono</string>
+    <string name="stngs_btn_web_site">Sito web</string>
+    <string name="stngs_btn_price_c">Categoria di prezzo</string>
+    <string name="stngs_btn_rating">Valutazione</string>
+    <string name="stngs_text_message">Inserisci le informazioni che vuoi vedere nell\'adesivo</string>
+    <string name="stngs_btn_feedback_last">Ultimo feedback</string>
+    <string name="stngs_btn_feedback_count">Quantità di feedback</string>
+    <string name="request_permission">Questa app richiede l\'autorizzazione della videocamera.</string>
+    <string name="back">Indietro</string>
+    <string name="menu_text_desc_serv">Server corrente</string>
+    <string name="menu_text_title">Impostazioni</string>
+    <string name="alertDialog_noObjects">Nessun oggetto nelle vicinanze</string>
+    <string name="alertDialog_unknownPlace">Posto sconosciuto</string>
+    <string name="tripAdv_feedbacks">una valutazione</string>
+    <string name="toast_task_canceled">Compito annullato</string>
+    <string name="toast_cannot_configure_exif">Impossibile configurare EXIF</string>
+    <string name="alertDialog_response">Risposta:</string>
+    <string name="error_title">Errore</string>
+    <string name="marker_address_nf">Indirizzo non trovato</string>
+    <string name="marker_feedbacks_nf">Recensioni non trovate</string>
+    <string name="marker_phone_nf">Telefono non trovato</string>
+    <string name="marker_price_nf">Prezzo non trovato</string>
+    <string name="marker_rating_nf">Valutazione non trovata</string>
+</resources>

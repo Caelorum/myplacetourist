@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_margin">8dp</dimen><!--dp зависит от масштабирования-->
+    <dimen name="stroke_height">23pt</dimen><!--pt зависит от разрешения экрана и не меняется при настройках масштаба в прилож-->
+    <dimen name="btn_text_default">17sp</dimen><!--sp применяется в шрифтах, настраивается пользователем-->
+    <dimen name="MainText">22sp</dimen>
+    <dimen name="MainText_Title">26sp</dimen>
+    <dimen name="def_rating">0</dimen>
+    <dimen name="big_btn">18sp</dimen>
+    <dimen name="btn_padding">6dp</dimen>
+</resources>

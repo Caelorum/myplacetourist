@@ -1,0 +1,79 @@
+<resources>
+
+    <string-array name="server_urls">
+        <item>185.162.94.228:5000</item>
+        <item>185.162.94.228:5001</item>
+        <item>79.173.78.120:5000</item>
+    </string-array>
+
+    <!--Others-->
+    <string name="filename" translatable="false">andTourist.jpg</string>
+    <string name="app_name" translatable="false">MyPlace</string>
+    <string name="request_permission">This app needs camera permission.</string>
+    <string name="no_location">No GPS data. Please check location permission</string>
+
+    <!--Settings Activity-->
+    <string name="stngs_text_message">Enter the information you want to see in the sticker</string>
+    <string name="stngs_btn_rating">Rating</string>
+    <string name="stngs_btn_price_c">Price category</string>
+    <string name="stngs_btn_kitchen">Kitchen</string>
+    <string name="stngs_btn_web_site">Web site</string>
+    <string name="stngs_btn_phone">Phone number</string>
+    <string name="stngs_btn_address">Address</string>
+    <string name="stngs_btn_feedback_count">Feedback amount</string>
+    <string name="stngs_btn_feedback_last">Last feedback</string>
+    <string name="stngs_btn_save">Save</string>
+
+    <!--Menu Activity-->
+    <string name="menu_text_title">Settings</string>
+    <string name="menu_text_desc_serv">Current server</string>
+    <string name="back">Back</string>
+    <string name="tripAdv_feedbacks">feedbacks</string>
+    <string name="tripAdv_def_feedback_count" translatable="false">0</string>
+
+    <!--Msgs-->
+    <string name="alertDialog_noObjects">No objects nearby</string>
+    <string name="alertDialog_unknownPlace">Unknown place</string>
+    <string name="alertDialog_response">Response:</string>
+    <string name="toast_cannot_configure_exif">Cannot configure EXIF</string>
+    <string name="toast_task_canceled">Task canceled</string>
+    <string name="error_title">Error</string>
+
+    <!--Marker-->
+    <string name="json_address_nf" translatable="false">Address not found</string>
+    <string name="json_feedbacks_nf" translatable="false">nReviews not found</string>
+    <string name="json_phone_nf" translatable="false">Phone not found</string>
+    <string name="json_price_nf" translatable="false">Price not found</string>
+    <string name="json_rating_nf" translatable="false">Rating not found</string>
+    <string name="marker_address_nf">Address not found</string>
+    <string name="marker_feedbacks_nf">Reviews not found</string>
+    <string name="marker_phone_nf">Phone not found</string>
+    <string name="marker_price_nf">Price not found</string>
+    <string name="marker_rating_nf">Rating not found</string>
+    <string name="tripAdv_url_check" translatable="false">www.tripadvisor.</string>
+    <string name="errorDialog_locNotDefined_title">Unknown location</string>
+    <string name="errorDialog_locNotDefined_message">Move and try again</string>
+    <string name="errorDialog_repeat_btn">Repeat</string>
+    <string name="errorDialog_objNotFound_title">No objects nearby</string>
+    <string name="errorDialog_report_btn">Report</string>
+    <string name="errorDialog_geoProblem_tittle">There\'s no GNSS data to send</string>
+    <string name="errorDialog_geoProblem_message">The operation requires geolocation data</string>
+    <string name="errorDialog_unknownError_title">Sorry, unexpected error</string>
+    <string name="errorDialog_send_bug_report_btn">Send bug report</string>
+    <string name="errorDialog_noInternet_message">Check the Internet connection</string>
+    <string name="errorDialog_invalidRequest_title">Invalid server request</string>
+    <string name="errorDialog_invalidRequest_message">Try to update the application</string>
+    <string name="errorDialog_serverError_title">Internal server error</string>
+    <string name="errorDialog_serverError_message">Try again later</string>
+    <string name="stop">Stop</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="errorDialog_noInternet_title">Couldn\'t connect to server</string>
+    <string name="errorDialog_open_settings_btn">Settings</string>
+    <string name="missing_gplay_services">You need to install Google Play Services to use the App properly</string>
+    <string name="setLay_select_server">Select server</string>
+    <string name="error_dialog_canceled_message">Operation canceled</string>
+    <string name="tripAdv_url" translatable="false">tripadvisor.com</string>
+    <string name="errorDialog_unknownError_message">Check your device</string>
+
+
+</resources>

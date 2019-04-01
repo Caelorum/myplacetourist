@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyPlace</string>
+    <string name="request_permission">此应用需要相机许可。</string>
+    <string name="no_location">没有GPS数据。 请检查位置许可</string>
+    <string name="stngs_text_message">在标签中输入您想要查看的信息</string>
+    <string name="stngs_btn_rating">评分</string>
+    <string name="stngs_btn_price_c">价格类别</string>
+    <string name="stngs_btn_kitchen">厨房</string>
+    <string name="stngs_btn_web_site">网站</string>
+    <string name="stngs_btn_phone">电话号码</string>
+    <string name="stngs_btn_address">地址</string>
+    <string name="stngs_btn_feedback_count">反馈金额</string>
+    <string name="stngs_btn_feedback_last">最后的反馈</string>
+    <string name="stngs_btn_save">保存</string>
+    <string name="menu_text_title">设置</string>
+    <string name="menu_text_desc_serv">当前服务器</string>
+    <string name="back">背部</string>
+    <string name="tripAdv_feedbacks">反馈</string>
+    <string name="alertDialog_noObjects">附近没有物品</string>
+    <string name="alertDialog_unknownPlace">未知的地方</string>
+    <string name="alertDialog_response">响应</string>
+    <string name="toast_cannot_configure_exif">无法配置EXIF</string>
+    <string name="toast_task_canceled">任务已取消</string>
+    <string name="error_title">错误</string>
+    <string name="marker_address_nf">地址未找到</string>
+    <string name="marker_feedbacks_nf">找不到评论</string>
+    <string name="marker_phone_nf">找不到电话</string>
+    <string name="marker_price_nf">价格未找到</string>
+    <string name="marker_rating_nf">未找到评级</string>
+</resources>

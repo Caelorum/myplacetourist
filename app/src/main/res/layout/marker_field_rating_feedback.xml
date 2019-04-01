@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/marker_field_ratingAFb"
+    style="@style/marker_field"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.doors.myplacetourist.common.VectorRatingBar
+        android:id="@+id/marker_RB_rating"
+        style="@style/BubbleRating"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <RelativeLayout
+        android:id="@+id/marker_RL_fbAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/marker_RB_rating">
+
+        <TextView
+            android:id="@+id/marker_TV_fbAmount"
+            style="@style/marker_greenText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="@string/tripAdv_def_feedback_count" />
+
+        <TextView
+            android:id="@+id/marker_TV_fbAmountPostfix"
+            style="@style/marker_greenText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/marker_TV_fbAmount"
+            android:text="@string/tripAdv_feedbacks" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

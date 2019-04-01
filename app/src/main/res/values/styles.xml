@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Style for errorDialog animation -->
+    <style name="ErrorDialogSlideAnim">
+        <item name="android:windowEnterAnimation">@anim/error_enter_clide</item>
+        <item name="android:windowExitAnimation">@anim/error_exit_slide</item>
+    </style>
+
+    <!--Style of btns in MarkerSettingsActivity-->
+    <style name="BtnSettings" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/stroke_height</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/btn_text_default</item>
+        <item name="android:textColor">@color/white</item>
+        <!--<item name="android:background">@color/white_super_alpha</item>-->
+        <item name="fontFamily">@font/fs_m</item>
+        <item name="android:stateListAnimator">@animator/btn_elevation</item>
+        <item name="android:background">@drawable/settings_button_bg</item>
+    </style>
+
+    <!--Style of rating bar-->
+    <style name="BubbleRating" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">16dip</item>
+        <item name="android:minWidth">46dip</item>
+        <item name="android:rating">@dimen/def_rating</item>
+        <item name="android:progressDrawable">@drawable/rb_bg</item>
+    </style>
+
+
+    <style name="big_btn">
+        <item name="android:textSize">@dimen/big_btn</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/fs_m</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="save_btn" parent="big_btn">
+        <item name="android:background">@drawable/s_btn</item>
+    </style>
+
+    <style name="marker_field">
+        <item name="android:paddingStart">25dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingEnd">25dp</item>
+    </style>
+
+    <style name="marker_exp_field" parent="marker_field">
+        <item name="android:paddingTop">10dp</item>
+    </style>
+    <style name="marker_name" parent="marker_field">
+        <item name="android:fontFamily">@font/fs_b</item>
+    </style>
+    <style name="marker_field_text" parent="marker_field">
+        <item name="android:fontFamily">@font/fs_r</item>
+    </style>
+    <style name="marker_mainText">
+        <item name="android:fontFamily">@font/fs_r</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="marker_greenText" parent="marker_mainText">
+        <item name="android:textColor">@color/trip_green</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+    <style name="marker_mainText_bold" parent="marker_mainText">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/fs_m</item>
+    </style>
+
+    <style name="MainText">
+        <item name="android:fontFamily">@font/fs_r</item>
+        <item name="android:textColor">@color/black_medium</item>
+        <item name="android:textSize">@dimen/MainText</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="MainText.Title" parent="MainText">
+        <item name="android:fontFamily">@font/fs_m</item>
+        <item name="android:textSize">@dimen/MainText_Title</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PhotoActivity">
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/phoLay_camera"
+        app:cameraMode="picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        app:cameraGestureTap="focusWithMarker"
+        app:cameraAudio="off"
+        app:cameraPlaySounds="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/phoLay_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:tint="@color/black_alpha"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/phoLay_btnSettings"
+        android:layout_width="23dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="32dp"
+        android:padding="@dimen/btn_padding"
+        android:background="@drawable/btn_menu"
+        app:layout_constraintBottom_toBottomOf="@+id/phoLay_IV_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phoLay_IV_logo" />
+
+    <ImageView
+        android:id="@+id/phoLay_IV_logo"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/phoLay_IV_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/myplace_title" />
+
+    <ImageView
+        android:id="@+id/phoLay_IV_frame"
+        android:layout_width="0dp"
+        android:layout_height="493dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328"
+        app:srcCompat="@drawable/frame" />
+
+
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/phoLay_progressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/black_circle"
+        android:elevation="10dp"
+        android:visibility="invisible"
+        app:cpb_background_progressbar_color="@color/white_super_alpha"
+        app:cpb_progressbar_color="@color/progress_start"
+        app:cpb_progressbar_width="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/phoLay_IV_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phoLay_IV_frame"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/phoLay_progressText"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/phoLay_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/phoLay_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/phoLay_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/phoLay_progressBar" />
+
+    <RelativeLayout
+        android:id="@+id/phoLay_marker"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:elevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" >
+
+        <View
+        android:id="@+id/phoLay_marker_V_1"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/marker_1"
+        android:visibility="invisible" />
+
+        <View
+        android:id="@+id/phoLay_marker_V_2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/phoLay_marker_V_1"
+        android:background="@drawable/marker_2" />
+
+        <LinearLayout
+        android:id="@+id/phoLay_marker_LL_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoLay_marker_V_2"
+        android:background="@drawable/marker_3"
+        android:orientation="vertical">
+
+            <TextView
+            android:id="@+id/marker_TV_name"
+            style="@style/marker_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_below="@id/phoLay_marker_LL_3"
+        android:background="@drawable/marker_4" />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/phoLay_btnTakePictures"
+        style="@style/big_btn"
+        android:layout_width="77dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_tp"
+        android:paddingBottom="14dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoLay_IV_frame"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/phoLay_btnMarkerSettings"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_p"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/phoLay_IV_bottom"
+        app:layout_constraintEnd_toEndOf="@+id/phoLay_IV_bottom"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="@+id/phoLay_IV_bottom"
+        app:layout_constraintTop_toTopOf="@+id/phoLay_IV_bottom"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <ImageView
+        android:id="@+id/phoLay_IV_bottom"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/phoLay_btnTakePictures"
+        app:layout_constraintEnd_toEndOf="@+id/phoLay_btnTakePictures"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="@+id/phoLay_btnTakePictures"
+        app:layout_constraintTop_toTopOf="@+id/phoLay_btnTakePictures"
+        app:layout_constraintVertical_bias="0.9"
+        app:srcCompat="@drawable/form" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
